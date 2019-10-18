@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int issushu(int n){//issushu函数判断数i是不是素数，如果不是则什么都不做，如果是则输出这个数
+    int i;
+    for(i=2;i<n;++i){
+        if(n%i==0){
+            return;
+        }
+    }
+    printf("%d  ",n);
+}
+int main(){
+    int i;
+    for(i=1;i<=100;++i){
+        issushu(i);
+    }
+    return 0;
+}
